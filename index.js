@@ -8,7 +8,9 @@ function afterMount({props}, el) {
 }
 
 function render({props}) {
-	return (<input type='text' class={['Calendar', props.class]}/>);
+	const {id, name} = props;
+
+	return (<input id={id} name={name} type='text' class={['Calendar', props.class]}/>);
 }
 
 export default {afterMount, render};
