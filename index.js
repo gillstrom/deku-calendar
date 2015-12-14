@@ -9,8 +9,7 @@ function afterMount({props}, el) {
 
 function render({props}) {
 	const {id, name} = props;
-
-	return (<input id={id} name={name} type='text' class={['Calendar', props.class]}/>);
+	return <input id={id} name={name} type='text' class={['Calendar', props.class]} autocomplete='off'/>;
 }
 
 export default {afterMount, render};
