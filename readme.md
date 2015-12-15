@@ -13,7 +13,7 @@ $ npm install --save deku-calendar
 ## Usage
 
 ```js
-import Calendar from ('deku-calendar');
+import Calendar from 'deku-calendar';
 
 function onSelect(date) {
 	console.log(date);
