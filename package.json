@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "build": "browserify example/index.js -o example/build.js -dv",
+    "build": "browserify example/index.js -o example/build.js -dv --presets es2015,react",
     "prepublish": "babel  --presets es2015,react index.js --out-file dist.js",
     "test": "xo"
   },
@@ -48,19 +48,6 @@
     "eslint-config-xo-react": "^0.3.0",
     "eslint-plugin-react": "^3.9.0",
     "xo": "^0.11.2"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015",
-            "react"
-          ]
-        }
-      ]
-    ]
   },
   "xo": {
     "esnext": true,
